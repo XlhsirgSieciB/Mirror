@@ -25,8 +25,8 @@ public class ClassPropertyUtil {
 		}
 	}
 
-	public static void setProperties(Object obj, Map<String, ? extends Object> properties) {
-		for (Map.Entry<String, ? extends Object> entry : properties.entrySet()) {
+	public static void setProperties(Object obj, Map<String, ?> properties) {
+		for (Map.Entry<String, ?> entry : properties.entrySet()) {
 			setProperty(obj, entry.getKey(), entry.getValue());
 		}
 	}
