@@ -22,10 +22,4 @@
 		<property name="bool" value="true"/>
 		<property name="Bool" value="true"/>
 	</instance>
-	<instance name="DBConnectionPool" interface="com.gbi.base.database.DBConnectionPool"
-			  class="com.gbi.mongodb2.core.Mongo2ConnectionPool">
-		<construct-arg name="host" type="java.lang.String" value="127.0.0.1"/>
-		<construct-arg name="port" type="int" value="27017"/>
-		<construct-arg name="needLog" type="boolean" value="false"/>
-	</instance>
 </instances>
