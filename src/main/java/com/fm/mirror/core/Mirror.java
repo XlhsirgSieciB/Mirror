@@ -23,6 +23,14 @@ public final class Mirror {
 	}
 
 	@SuppressWarnings("unchecked")
+	public static <T> T getInstance(String name, Class<T> clazz) {
+		if (clazz != null) {
+			return getInstance(name);
+		}
+		throw new NullPointerException();
+	}
+
+	@SuppressWarnings("unchecked")
 	public static <T> T getInstance(String name) {
 		T object = (T) container.get(name);
 		if (object == null) {
